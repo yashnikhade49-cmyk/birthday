@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- First screen -->
+    <div id="startScreen" class="start-screen">
+        <button class="start-btn" onclick="startExperience()">Tap to Open 🎁</button>
+    </div>
+
+    <!-- Main content -->
+    <div id="mainContent" class="page-wrapper hidden">
+
+        <div class="side-images left-images">
+            <img src="assets/images/photo1.jpg" alt="Photo 1">
+            <img src="assets/images/photo2.jpg" alt="Photo 2">
+        </div>
+
+        <div class="container">
+            <h1>🎉 Happy Birthday 🎂</h1>
+
+            <p class="message">
+                Wishing you a very happy birthday 😊<br>
+                Hope your day is full of happiness and fun 🎉<br>
+                Stay happy and keep smiling always ✨
+            </p>
+
+            <button onclick="showSurprise()">See Surprise 🎁</button>
+
+            <div id="surprise" class="hidden">
+                <p id="typedText" class="surprise-text"></p>
+            </div>
+
+            <audio id="music" loop>
+                <source src="assets/music/song.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div class="side-images right-images">
+            <img src="assets/images/photo3.jpg" alt="Photo 3">
+            <img src="assets/images/photo4.jpg" alt="Photo 4">
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
